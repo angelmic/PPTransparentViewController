@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoViewController">
+            <connections>
+                <outlet property="backgroundContainer" destination="5lf-CA-Inv" id="zwU-Sl-CvU"/>
+                <outlet property="containerView" destination="SjJ-cN-f11" id="7qH-8D-2hX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lf-CA-Inv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SjJ-cN-f11">
+                    <rect key="frame" x="0.0" y="400" width="375" height="267"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYk-Qe-GLr">
+                            <rect key="frame" x="129.5" y="50" width="115" height="30"/>
+                            <state key="normal" title="Demo String 001"/>
+                            <connections>
+                                <action selector="String001Clicked:" destination="-1" eventType="touchUpInside" id="xNQ-MX-QIl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlI-Nb-ZQZ">
+                            <rect key="frame" x="128.5" y="110" width="117" height="30"/>
+                            <state key="normal" title="Demo String 002"/>
+                            <connections>
+                                <action selector="String002Clicked:" destination="-1" eventType="touchUpInside" id="Adk-ca-KMl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pYk-Qe-GLr" firstAttribute="top" secondItem="SjJ-cN-f11" secondAttribute="top" constant="50" id="0Mq-l8-3Ll"/>
+                        <constraint firstItem="OlI-Nb-ZQZ" firstAttribute="centerX" secondItem="SjJ-cN-f11" secondAttribute="centerX" id="3Gg-Ri-7SN"/>
+                        <constraint firstItem="OlI-Nb-ZQZ" firstAttribute="top" secondItem="pYk-Qe-GLr" secondAttribute="bottom" constant="30" id="kzG-M0-jHv"/>
+                        <constraint firstItem="pYk-Qe-GLr" firstAttribute="centerX" secondItem="SjJ-cN-f11" secondAttribute="centerX" id="q6T-5K-gGQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.38431372549999998" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SjJ-cN-f11" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="GAO-SF-dY1"/>
+                <constraint firstItem="5lf-CA-Inv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H1R-vF-Nl7"/>
+                <constraint firstAttribute="trailing" secondItem="5lf-CA-Inv" secondAttribute="trailing" id="MKl-C9-Piz"/>
+                <constraint firstAttribute="trailing" secondItem="SjJ-cN-f11" secondAttribute="trailing" id="PzU-9X-erC"/>
+                <constraint firstAttribute="bottom" secondItem="5lf-CA-Inv" secondAttribute="bottom" id="VWS-6z-Z1R"/>
+                <constraint firstItem="SjJ-cN-f11" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="p2o-6U-GEN"/>
+                <constraint firstAttribute="bottom" secondItem="SjJ-cN-f11" secondAttribute="bottom" id="rlS-m6-HxH"/>
+                <constraint firstItem="5lf-CA-Inv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="whX-U7-ieW"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
